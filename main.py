@@ -4,6 +4,7 @@ from calculation import subtract_function as sub
 
 print("Select operation.")
 print("1.Add")
+print("2.Subtract")
 
 while True:
     # take input from the user
