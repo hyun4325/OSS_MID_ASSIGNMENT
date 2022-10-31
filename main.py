@@ -1,4 +1,5 @@
-from curses.ascii import islower
+
+from operator import ne
 from calculation import add_function as add
 from calculation import subtract_function as sub
 from calculation import multiply_function as mul
@@ -25,7 +26,6 @@ while True:
         elif choice == '2':
             result = int(sub.sub(num1, num2))
             print(result)
-        elif choice == '3':
             result = int(mul.mul(num1, num2))
             print(result)
         elif choice == '4':
@@ -34,13 +34,20 @@ while True:
 
         # check if user wants another calculation
         # break the while loop if answer is no
-        
-        next_calculation = islower(input("Let's do next calculation? (yes/no): "))
-        if next_calculation == "no":
+        while True:
+            next_calculation = input("Let's do next calculation? (yes/no): ").lower()            
+            if next_calculation == "no":   
+                progress = False
+                break
+            elif next_calculation == "yes":
+                progress = True
+                break
+            else:
+                print("input error")
+                continue
+        if progress == False:
             break
-
-
-
+     
 
 
     else:
