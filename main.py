@@ -1,3 +1,4 @@
+from curses.ascii import islower
 from calculation import add_function as add
 from calculation import subtract_function as sub
 from calculation import multiply_function as mul
@@ -33,9 +34,14 @@ while True:
 
         # check if user wants another calculation
         # break the while loop if answer is no
-        next_calculation = input("Let's do next calculation? (yes/no): ")
+        
+        next_calculation = islower(input("Let's do next calculation? (yes/no): "))
         if next_calculation == "no":
             break
+
+
+
+
 
     else:
         print("Invalid Input")
