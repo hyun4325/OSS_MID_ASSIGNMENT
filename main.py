@@ -1,25 +1,31 @@
+from audioop import mul
 from calculation import add_function as add
 from calculation import subtract_function as sub
+from calculation import multiply_function as mlt
 
 
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
+print("3.Multiply")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2): ")
+    choice = input("Enter choice(1/2/3): ")
 
-    # check if choice is one of the four options
-    if choice in ('1', '2'):
+    # check if choice is one of the four options3
+    if choice in ('1', '2', '3'):
 
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
         if choice == '1':
             result = int(add.add(num1, num2))
             print(result)
-        if choice == '2':
+        elif choice == '2':
             result = int(sub.sub(num1, num2))
+            print(result)
+        elif choice == '3':
+            result = int(mlt.mul(num1, num2))
             print(result)
 
         # check if user wants another calculation
