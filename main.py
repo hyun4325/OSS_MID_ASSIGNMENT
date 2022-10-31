@@ -1,7 +1,6 @@
-from audioop import mul
 from calculation import add_function as add
 from calculation import subtract_function as sub
-from calculation import multiply_function as mlt
+from calculation import multiply_function as mul
 
 
 print("Select operation.")
@@ -25,7 +24,7 @@ while True:
             result = int(sub.sub(num1, num2))
             print(result)
         elif choice == '3':
-            result = int(mlt.mul(num1, num2))
+            result = int(mul.mul(num1, num2))
             print(result)
 
         # check if user wants another calculation
