@@ -36,9 +36,17 @@ while True:
         # break the while loop if answer is no
         while True:
             next_calculation = input("Let's do next calculation? (yes/no): ").lower()            
-            if next_calculation == "no":   
-                progress = False
-                break
+            if next_calculation == "no": 
+                remind = input("Are you sure? (yes/no)").lower()
+                if remind == "yes":  
+                    progress = False
+                    break
+                elif remind == "no":
+                    progress = True
+                    break
+                else:
+                    print("input error")
+                    continue    
             elif next_calculation == "yes":
                 progress = True
                 break
