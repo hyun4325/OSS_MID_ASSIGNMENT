@@ -1,0 +1,15 @@
+error location : Enter choice(1/2/3/4)
+input data : 5
+error : Invalid Input
+
+
+error location : Let's do next calculation? (yes/no)
+input data : wht
+error : input error
+
+
+error location : Are you sure? (yes/no)
+input data : tes
+error : input error
+
+
