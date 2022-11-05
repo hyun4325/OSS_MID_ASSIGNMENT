@@ -28,17 +28,19 @@ while True:
 
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
+
+
         if choice == '1':
             func = '+'
-            result = int(add.add(num1, num2))
+            result = add.add(num1, num2)
             print(result)
         elif choice == '2':
             func = '-'
-            result = int(sub.sub(num1, num2))
+            result = sub.sub(num1, num2)
             print(result)
         elif choice == '3':
             func = '*'
-            result = int(mul.mul(num1, num2))
+            result = mul.mul(num1, num2)
             print(result)
         elif choice == '4':
             func = '/'
