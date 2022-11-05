@@ -13,3 +13,28 @@ input data : tes
 error : input error
 
 
+error location : Let's do next calculation? (yes/no)
+input data : & c:/users/pc/appdata/local/programs/python/python310/python.exe c:/users/pc/documents/github/oss_mid_assignment/main.py
+error : input error
+
+
+error location : Enter second number
+input data : 0
+error : Can not divide by 0
+
+
+error location : Enter second number
+input data : 0
+error : Can not divide by 0
+
+
+error location : Enter second number
+input data : 0
+error : Can not divide by 0
+
+
+error location : Enter second number
+input data : 0
+error : Can not divide by 0
+
+

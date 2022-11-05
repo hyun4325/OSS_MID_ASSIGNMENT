@@ -47,13 +47,6 @@ result : 1.5
 formula : 3.0 / 2.0 = 1.5
 
 
-Selected operation : /
-first number : 30.0
-second number : 4.0
-result : 7.5
-formula : 30.0 / 4.0 = 7.5
-
-
 Selected operation : *
 first number : 5.0
 second number : 6.0
@@ -61,10 +54,32 @@ result : 30
 formula : 5.0 * 6.0 = 30
 
 
-Selected operation : -
-first number : 10.0
-second number : 4.0
-result : 6
-formula : 10.0 - 4.0 = 6
+Selected operation : /
+first number : 0.0
+second number : 10.0
+result : 0.0
+formula : 0.0 / 10.0 = 0.0
+
+
+Selected operation : /
+first number : 0.0
+second number : 10.0
+result : 0.0
+formula : 0.0 / 10.0 = 0.0
+
+
+
+Selected operation : /
+first number : 0.0
+second number : 10.0
+result : 0.0
+formula : 0.0 / 10.0 = 0.0
+
+
+Selected operation : /
+first number : 0.0
+second number : 3.0
+result : 0.0
+formula : 0.0 / 3.0 = 0.0
 
 

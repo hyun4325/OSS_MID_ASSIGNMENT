@@ -43,9 +43,12 @@ while True:
         elif choice == '4':
             func = '/'
             result = div.div(num1, num2)
+            if(result == "Can not divide by 0") :
+                saveerror.save_error(error_log, result , "Enter second number",'0')
             print(result)
-
-        savelog.save_log(cal_log, func, str(num1), str(num2), str(result))
+            
+        if(result != "Can not divide by 0") :
+            savelog.save_log(cal_log, func, str(num1), str(num2), str(result))
         
 
         # check if user wants another calculation
